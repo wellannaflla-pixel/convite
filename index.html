@@ -20,31 +20,28 @@
         }
 
         .page-container {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('fundo.png'); 
-    
-    /* ALTERE ESTAS DUAS LINHAS ABAIXO */
-    background-size: contain; /* Garante que a imagem apareça inteira sem cortes */
-    background-position: center top; 
-    
-    background-repeat: no-repeat;
-    background-color: #f2f2f2; /* Cor de fundo caso a tela seja maior que a imagem */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-    /* Ajuste o padding conforme necessário para o texto não subir */
-    padding-top: 320px; 
-    padding-bottom: 50px;
-}
+            width: 100vw;
+            min-height: 100vh;
+            background-image: url('fundoconvite.png'); 
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 320px; 
+            padding-bottom: 50px;
+        }
 
-        .intro-text, .rules {
-    width: 85%; /* Limita a largura do texto para sobrar espaço nas laterais */
-    margin-left: auto;
-    margin-right: auto;
-}
+        .intro-text {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0 10% 25px 10%;
+            color: #5D2A18;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
 
         .date-section {
             display: flex;
@@ -190,7 +187,7 @@
         </p>
 
        <a href="https://maps.app.goo.gl/znYuboFbLFK2PzC99" target="_blank" class="action-btn btn-mapa">LOCALIZAÇÃO NO MAPA</a>
-<a href="https://docs.google.com/forms/d/1v1N0YuRuklsHPWYk05KkrCMF1ctpVGCECT7fI4Nbk4Q/preview" target="_blank" class="action-btn btn-presenca">CONFIRMAR PRESENÇA</a>
+<a href="https://docs.google.com/forms/d/1v1N0YuRuklsHPWYk05KkrCMF1ctpVGCECT7fI4Nbk4Q/edit#responses" target="_blank" class="action-btn btn-presenca">CONFIRMAR PRESENÇA</a>
         
         <div class="gift-section">
             <strong style="color: #2D5A27; font-size: 1.2rem;">SUGESTÕES DE PRESENTE:</strong>
