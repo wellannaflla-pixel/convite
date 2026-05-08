@@ -20,19 +20,25 @@
         }
 
         .page-container {
-            width: 100vw;
-            min-height: 100vh;
-            background-image: url('fundoconvite.png'); 
-            background-size: cover;
-            background-position: center top;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding-top: 320px; 
-            padding-bottom: 50px;
-        }
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('fundo.png'); 
+    
+    /* ALTERE ESTAS DUAS LINHAS ABAIXO */
+    background-size: contain; /* Garante que a imagem apareça inteira sem cortes */
+    background-position: center top; 
+    
+    background-repeat: no-repeat;
+    background-color: #f2f2f2; /* Cor de fundo caso a tela seja maior que a imagem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    /* Ajuste o padding conforme necessário para o texto não subir */
+    padding-top: 320px; 
+    padding-bottom: 50px;
+}
 
         .intro-text {
             font-size: 1.1rem;
