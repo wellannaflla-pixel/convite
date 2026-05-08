@@ -20,26 +20,28 @@
         }
 
         .page-container {
-    width: 100vw;
-    max-width: 100%; /* Garante que não ultrapasse a largura do visor */
-    min-height: 100vh;
-    background-image: url('fundo.png'); 
-    
-    /* Mude para '100% 100%' para a imagem se achatar exatamente ao tamanho da tela */
-    background-size: 100% 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden; /* Corta qualquer sobra lateral */
-}
+            width: 100vw;
+            min-height: 100vh;
+            background-image: url('fundoconvite.png'); 
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 320px; 
+            padding-bottom: 50px;
+        }
 
-    .intro-text, .rules {
-    font-size: 0.95rem; /* Redução leve para evitar quebras de linha gigantes */
-    padding: 0 15px;
-}
+        .intro-text {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0 10% 25px 10%;
+            color: #5D2A18;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
 
         .date-section {
             display: flex;
@@ -57,11 +59,10 @@
         }
 
         .day-big { 
-    font-size: 4rem; /* Diminuímos de 5.5rem para 4rem para caber melhor */
-    line-height: 1;
-}
-
-
+            font-size: 5.5rem; 
+            line-height: 0.8;
+            font-weight: 900;
+        }
 
         .location {
             color: #FF6B00;
